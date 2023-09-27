@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karma:wght@700&display=swap');
+body {
+    background-color: hsl(160, 100%, 89%);
+    margin: 0;
+    font-family: 'Comic Neue', cursive;
+}
+.navigation {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    padding: 0.5vw;
+    display: flex;
+    background-color: #fff;
+    border-bottom: 0.2vw solid #00C986;
+    box-shadow: rgba(86, 156, 114, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.navigation_bar {
+    padding: 0.1vw;
+    display: flex;
+}
+.navigation_keys {
+    margin: 2.5vw;
+    display: flex;
+    position: absolute;
+    right: 0;
+}
+.navigation_keys .subjects {
+    display: flex;
+    margin: -2.3vw 9vw;
+}
+.navigation_keys .subjects p {
+    font-size: 1.3vw;
+    font-weight: bold;
+    padding: 0 2vw;
+}
+.navigation_keys .tools {
+    margin: -1.5vw -0.5vw 0.5vw 3vw;
+}
+.navigation_keys .tools a {
+    margin-left: 1vw;
+}
+.overlay_search {
+    background-color: rgba(0, 0, 0, 0.35);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+}
+.search_bar {
+    background-color: #fff;
+    width: 26.5vw;
+    margin: 7.5vw 0 0 68vw;
+    border-radius: 0.2vw;
+    padding: 0.6vw;
+}
+[placeholder]:focus::-webkit-input-placeholder {
+    transition: text-indent 0.2s 0.2s ease; 
+    text-indent: -100%;
+    opacity: 1;
+ }
+.search_bar input {
+    width: 23vw;
+    border: none;
+    outline: none;
+}
+.search_result_box {
+    background-color: #fff;
+    width: 28.5vw;
+    margin: 1vw 0 0 67vw;
+    border-radius: 0.2vw;
+    padding: 0.7vw;
+}
+.search_result {
+    margin: 0 0 1.5vw 0;
+    display: flex;
+}
+.wqi_search_result {
+    margin: 0.1vw 0 0 1vw;
+    background-color: #A8E05F;
+    border-radius: 0.3vw;
+    color: #fff;
+    font-size: 0.8vw;
+    padding: 0.2vw 1vw;
+}
+.content {
+    padding: 6.5vw 0 2.5vw 0;
+    box-shadow: rgba(86, 156, 114, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.search_forum_bar {
+    margin: -6.5vw 0 0 9vw;
+}
+.search_forum_bar input {
+    font-size: 1.1vw;
+    padding: 0 2vw;
+    border-radius: 0.5vw;
+    height: 3.5vw;
+    width: 75vw;
+    border: none;
+    outline: none;
+}
+.search_forum_bar .search_forum_button {
+    margin: 0 0 -1.35vw -2vw;
+}
+.forum_headline {
+    display: flex;
+    margin-top: 4vw;
+}
+.forum_content {
+    margin: 1.5vw 3vw 0 3vw;
+    display: flex;
+}
+.forum_content .forum_main_content {
+    width: 75%;
+    margin: 0 4vw 0 0;
+}
+.forum_content .forum_main_content .forum_write_post {
+    display: flex;
+    background-color: #fff;
+    border-radius: 0.3vw;
+    padding: 1.5vw 0 0 1.5vw;
+}
+.forum_content .forum_main_content .forum_write_post .forum_write_post_content {
+    margin: 1vw 2vw;
+}
+.forum_content .forum_main_content .forum_write_post .forum_write_post_content .forum_write_post_title {
+    display: flex;
+}
+.forum_content .forum_main_content .forum_write_post .forum_write_post_content .forum_write_post_title input {
+    font-family: 'Karma', serif;
+    font-weight: bold;
+    width: 61vw;
+    font-size: 1.5vw;
+    border-radius: 0.5vw;
+    border: none;
+    outline: none;
+}
+.forum_content .forum_main_content .forum_write_post .forum_write_post_content .forum_write_post_title .count_title {
+    font-size: 1vw;
+    color: #808080;
+}
+.forum_content .forum_main_content .forum_write_post .forum_write_post_content .forum_write_post_message textarea {
+    font-family: 'Karma', serif;
+    font-weight: bold;
+    width: 63vw;
+    font-size: 0.9vw;
+    height: 10vw;
+    border-radius: 0.5vw;
+    border: none;
+    outline: none;
+    resize: none;
+}
+.forum_content .forum_main_content .forum_write_post .forum_write_post_content .forum_write_post_message .count_message {
+    font-size: 1vw;
+    margin: 3vw 0 0 60vw;
+    color: #808080;
+}
+.forum_content .forum_main_content .forum_write_post .forum_write_post_content .forum_write_post_tags {
+    display: flex;
+    padding-bottom: 0.7vw;
+    border-bottom: 0.1vw solid #00a56f;
+}
+.forum_content .forum_main_content .forum_write_post .forum_write_post_content .forum_write_post_tags .forum_write_post_tags_content {
+    font-size: 0.8vw;
+    background-color: #e5f0fd;
+    border: 1px solid #CBE6FF;
+    border-radius: 0.5vw;
+    padding: 0 1vw;
+    margin-top: -0.7vw;
+    margin-left: 1vw;
+}
+.forum_content .forum_main_content .forum_write_post .forum_write_post_content .forum_write_post_submit {
+    padding: 0.1vw 2vw;
+    margin-top: 1vw;
+    margin-left: 57vw;
+    border-radius: 0.5vw;
+    font-size: 1vw;
+    font-weight: bold;
+    font-family: 'Karma', serif;
+    background-color: rgba(0, 179, 119, 0.49);
+    border: none;
+    outline: none;
+}
+.forum_content .forum_main_content .forum_feeds .forum_feeds_post {
+    border-radius: 0.5vw; 
+    background-color: #fff;
+    padding: 1vw 2.5vw;
+    margin: 1vw 0;
+}
+.forum_content .forum_main_content .forum_feeds .forum_feeds_post .forum_feeds_post_tags {
+    display: flex;
+}
+.forum_content .forum_main_content .forum_feeds .forum_feeds_post .forum_feeds_post_tags .forum_feeds_post_tags_content {
+    font-size: 0.8vw;
+    background-color: #e5f0fd;
+    border: 1px solid #CBE6FF;
+    border-radius: 0.5vw;
+    padding: 0 1vw;
+    margin-right: 1vw;
+}
+.forum_content .forum_main_content .forum_feeds .forum_feeds_post .forum_feeds_post_reacts {
+    display: flex;
+}
+.forum_content .forum_other_content {
+    width: 20%;
+}
+.forum_other_content .forum_tags {
+    background-color: #fff;
+    padding: 0.3vw 2vw;
+}
+.forum_other_content .forum_tags .forum_tags_box {
+    margin: -2vw 0 2vw 0;
+    display: flex;
+}
+.forum_other_content .forum_tags .forum_tags_box .forum_tags_content {
+    border-radius: 0.5vw;
+    margin-top: 1vw;
+    height: 1.8vw;
+    padding: 0 1vw;
+    background-color: #e5f0fd;
+    border: 1px solid #CBE6FF;
+}
+.footer {
+    background-color: #fff;
+    display: flex;
+    padding: 1vw 5vw;
+    border-top: 0.2vw solid #00C986;
+}
+.subjects_footer {
+    display: flex;
+}
+.subjects_footer .first {
+    padding: 0.3vw 5vw ;
+    font-size: 1.2vw;
+}
+.footer .second {
+    padding: 0.3vw 5vw ;
+    font-size: 1.2vw;
+}
+.footer .third {
+    padding: 0.3vw 5vw ;
+    font-size: 1.2vw;
+}
+.mailing_list {
+    margin-top: 0.5vw;
+    margin-left: 3vw;
+}
+.mailing_list .email_mailing {
+    font-family: 'Comic Neue', cursive;
+    margin: -3vw 0 0 -1vw;
+    width: 15vw;
+    height: 1vw;
+    font-size: 1vw;
+    border: none;
+    padding: 0.5vw;
+    border-bottom: 0.15vw solid #000;
+}
+.mailing_list .social_media {
+    margin-top: 1vw;
+}
